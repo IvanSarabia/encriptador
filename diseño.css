@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+:root{
+--colorSecundario:#040449;
+--fuerteprincipal:font-family: "Quicksand", sans-serif;
+--fuentesecundarioa:font-family: "Lobster", sans-serif; font-weight: 400;
+font-style: normal;
+--colortercero:#f0f0f0;
+--colorprimario:#DEFFDF;
+
+}
+
+.titulo{
+    display: flex;
+    padding: 10px;
+    justify-content:left;
+    color: var(--colorSecundario);
+    font-size: 1.5rem;
+    font-family: var(--fuerteprincipal);
+}
+body{
+    background-color:var(--colorprimario);
+    color:black;
+    box-sizing: border-box;
+}
+.area{
+    height: 400px;
+    width: 50%;
+    font-size: 2rem;
+    background-color:var(--colorprimario) ;
+    border: 0;
+    font-family: "Quicksand", sans-serif;
+    outline: none;
+    cursor: text;
+}  
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.boton1{
+    background-color: #0004FF;
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: white;
+    font-family:var(--fuentesecundarioa)
+}
+.boton1:hover{
+    background-color:black;
+    color: white;
+}
+.boton2{
+    background-color:#0004FF;
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: white;
+    font-family: var(--fuentesecundarioa);   
+}
+.boton2:hover{
+    background-color: black;
+    color: white;
+}
+.resultado{
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    width: 50%
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Quicksand", sans-serif; 
+}
+.area2{
+    background-color: white;
+    border-radius: 32px;
+    width: 50%
+}
+.parrafo1{
+    font-size: 1.5rem;
+    font-family: "Quicksand", sans-serif; 
+    position: 20px;
+    
+}
+.parrafo2{
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif; 
+    padding: 20px;
+  
+}
+.botonCopiar{
+    background-color: #0A3871;
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: white;
+    font-family:var(--fuentesecundarioa)
+}
+.botonCopiar:hover{
+    background-color: black;
+    color: white;
+}
+.textoCopiar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.licencia{
+    font-family:var(--fuentesecundarioa);
+    text-align:right;
+    background-color:#79EB33;
+    color: white;
+    font-size: .8rem;
+    padding: 5px;
+}
+@media(max-width:500px){
+    .cuerpo{
+        flex-direction:column;
+    }
+    .botones{
+        flex-direction: column;
+    }
+}
+@media(min-width:501px) and (max-width:1200px){
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+    }
+}

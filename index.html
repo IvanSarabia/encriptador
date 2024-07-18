@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-MEX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador</title>
+   <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+    <header class="titulo">
+        <img src="Logo.png">
+        <p>Encriptador de texto</p>
+    </header>
+  <main class="cuerpo">
+    <div>
+            <img src="Frame 1.png">
+             <textarea id="ingreso" class="area" placeholder="ingresa aqui tu texto:"></textarea>
+         <div class="botones">
+            <button onclick="encriptar()" class="boton1"> encriptar</button>
+            <button onclick="desencriptar()" class="boton2">desencriptar</button>
+         </div>
+    </div>
+    <div class="textoCopiar">
+        <div class="resultado" id="desplegado">
+         <img src="Muñeco.png" >
+         <p1 class="parrafo1"> Ningún mensaje fue encontrado</p1>
+         <p2 class="parrafo2">Ingresa el texto que desees encriptar o desencriptar</p2>   
+         </div>
+      <div>
+        <button class="botonCopiar" onclick="Tcopiar()"> Copiar</button>
+     </div> 
+    </div>
+</main>
+<footer class="licencia">
+    <p3>Sarabia Innovations</p3>
+</footer>
+    <script src="logica.js"></script>
+    
+</body>
+</html>
