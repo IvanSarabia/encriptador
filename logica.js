@@ -19,7 +19,7 @@ else{
         let cambios ={
             "a":"ai",
             "e":"enter",
-            "i":"imea",
+            "i":"imes",
             "o":"ober",
             "u":"ufat"
         }
@@ -51,7 +51,7 @@ return
             alert("solo letras minusculas y sin acentos")
         }
         else{
-            let cambios ={  "ai":"a", "enter":"e", "imea":"i", "ober":"o", "ufat":"u" }
+            let cambios ={  "ai":"a", "enter":"e", "imes":"i", "ober":"o", "ufat":"u" }
             let textoMostrar= textoCifrar.replace(/ai|enter|imea|ober|ufat/g, function(match){
                 return cambios[match]
             })
